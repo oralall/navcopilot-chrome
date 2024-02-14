@@ -11,7 +11,7 @@
       if (message.length > 0) {
         evt.target.value = '';
         showUserMessage(message);
-      //  sendMessageToLLM(message);
+        //  sendMessageToLLM(message);
       }
     }
   };
