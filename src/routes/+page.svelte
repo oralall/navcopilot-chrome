@@ -1,5 +1,5 @@
 <script>
-  import { showUserMessage } from '$lib';
+  import { showUserMessage, sendMessageToLLM } from '$lib';
 
   const chatboxHeight = 400;
   const site_name = 'Navcopilot';
@@ -11,7 +11,7 @@
       if (message.length > 0) {
         evt.target.value = '';
         showUserMessage(message);
-        //  sendMessageToLLM(message);
+        sendMessageToLLM(message);
       }
     }
   };
