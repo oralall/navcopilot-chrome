@@ -65,8 +65,7 @@ function gptMessageReplaceLoadingGif(loadingDiv: HTMLDivElement, message: string
  * Scenario 3: new session due to session length limit
  */
 export async function sendMessageToLLM(message: string = '') {
-  const searchParams = new URLSearchParams(window.location.search);
-  const room_uuid = searchParams.get('id') || '';
+  const room_uuid = 'Ba31qHBZJ737';
 
   // Send message to server
   const data = {
