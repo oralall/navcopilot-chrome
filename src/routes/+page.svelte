@@ -1,5 +1,6 @@
 <script>
   import { showUserMessage, sendMessageToLLM } from '$lib';
+  import { onMount } from 'svelte';
 
   const chatboxHeight = 400;
   const site_name = 'Navcopilot';
@@ -15,6 +16,12 @@
       }
     }
   };
+
+  onMount(() => {
+    const chatinput = document.getElementById('chatinput');
+    chatinput.focus();
+  });
+
 </script>
 
 <div class="light">
